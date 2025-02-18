@@ -12,36 +12,34 @@ function isBestFriend(f1, f2) {
 
   return f1.bestFriend === f2.roll && f2.bestFriend === f1.roll;
 }
-
-// Running tests
 console.log(
   isBestFriend(
     { name: "hashem", roll: 1, bestFriend: 2 },
     { name: "kashem", roll: 2, bestFriend: 1 }
   )
-); // true
+);
 
 console.log(
   isBestFriend(
     { name: "hashem", roll: 21, bestFriend: 1 },
     { name: "kashem", roll: 1, bestFriend: 2 }
   )
-); // false
+);
 
 console.log(
   isBestFriend(
     { name: "kashem", roll: 2, bestFriend: 11 },
     "Kashem er Kono Bondhu Nai"
   )
-); // "Invalid"
+);
 
 console.log(
   isBestFriend("hashem", { name: "kashem", roll: 2, bestFriend: 11 })
-); // "Invalid"
+);
 
 console.log(
   isBestFriend(
     { name: "hashem", roll: 1, bestFriend: 1 },
     { name: "kashem", roll: 1, bestFriend: 1 }
   )
-); // true
+);

@@ -12,9 +12,9 @@ function validEmail(email) {
   return true;
 }
 
-console.log(validEmail("mehedi@google.com")); // ✅ true
-console.log(validEmail(".rukaya@google.com")); // ❌ false (starts with special character)
-console.log(validEmail("karim@ google.com")); // ❌ false (contains space)
-console.log(validEmail("taniyagoogle.com")); // ❌ false (missing @)
-console.log(validEmail("test@google.org")); // ❌ false (not ending with .com)
-console.log(validEmail(12345)); // ❌ "Invalid" (input is not a string)
+console.log(validEmail("mehedi@google.com")); 
+console.log(validEmail(".rukaya@google.com")); 
+console.log(validEmail("karim@ google.com")); 
+console.log(validEmail("taniyagoogle.com")); 
+console.log(validEmail("test@google.org")); 
+console.log(validEmail(12345)); 
